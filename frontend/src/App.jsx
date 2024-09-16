@@ -14,7 +14,7 @@ function App() {
         
         <Route path="/admin" element={<LogIn />} />
         <Route path="/admin/home" element={<AdminHome />} />
-        <Route path="/admin/book-detail" element={<BookDetail />} />
+        <Route path="/admin/book-detail/:bookId" element={<BookDetail />} />
         
         {/* END OF ADMIN ROUTES */}
 
@@ -23,6 +23,7 @@ function App() {
         <Route path="/user" element={<LogIn />} />
         <Route path="/user/home" element={<UserHome />} />
         <Route path="/user/profile" element={<Profile />} />
+        <Route path="/user/book-detail/:bookId" element={<BookDetail />} />
         
         {/* END OF USER ROUTES */}
       </Routes>

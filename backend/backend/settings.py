@@ -102,6 +102,10 @@ DATABASES = {
     }
 }
 
+# Media settings for file uploads
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 # User Model
 AUTH_USER_MODEL = 'api.User'
